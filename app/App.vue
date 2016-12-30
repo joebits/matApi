@@ -51,10 +51,9 @@
 					this.ingResults = [];
 					this.$http.post('/api', ['/'+ event.currentTarget.id]).then((data) => {
 						this.ingResults = {
-							kolhydrater: data.body.nutrientValues.carbohydrates,
+							kilokalorier: data.body.nutrientValues.energyKcal,
 							fett: data.body.nutrientValues.fat,
-							protein: data.body.nutrientValues.protein,
-							kalorier: data.body.nutrientValues.energyKcal
+							protein: data.body.nutrientValues.protein
 						};
 						this.search = true;				
 					}, (err) => {
