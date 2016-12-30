@@ -2,9 +2,11 @@
 
 ## Installation
 ```sh
-Klona eller ladda ner
+klona eller ladda ner
 npm install
 npm start
+öppna chrome
+http://localhost:8080
 ```
 
 ## Beskrivning
