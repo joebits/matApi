@@ -1,19 +1,31 @@
-#node-vue
-Vue.js boilerplate using express & node as back-end.
+#matApi
 
 ## Installation
 ```sh
-npm install --save node-vue
-cd node_modules/node-vue
+Klona eller ladda ner
 npm install
-copy node-vue folder to wherever you want your project to reside
 npm start
 ```
 
-## Bugs
-At the moment the entire boilerplate will be added  to your node_modules when running <code>npm install --save node-vue</code>, which is not the intent. You'll have to run <code>npm install</code> twice (once to download the module from npm to your machine, and once after navigating to <code>node_modules/node-vue</code> to also install the boilerplate's dependencies. I'm currently looking for a workaround, but the boilerplate still works if you run <code>npm start</code> from the <code>node_modules/node-vue</code> folder.
+## Beskrivning
+Vue.js / Node.js / Express / Materializedcss /
 
+En app för att hämta maträtter och ingridienser via matapi.se
+Jag valde att använda Vue.js då det verkade spännande. Node.js kom med lite på köpet
+och det visade sig vara relativt smidigt att använda.
 
-## Todo
-- Automatically open the project in a browser.
-- Trigger hot reload when non-vue files are updated.
+Jag fick snabbt problem med mina anrop till Api:et och fick felet:
+
+"XMLHttpRequest cannot load http://blablabla. No
+'Access-Control-Allow-Origin' header is present on the requested
+resource. Origin 'null' is therefore not allowed access."
+
+Detta resultelrade i att jag istället gjorde anropet via node.Js på serversidan
+och skickade detta vidare till klienten. Eftersom jag är helt grön på både Node och
+Vue var detta lite småkinkigt men jag fick till det tillslut!
+
+Sidan är minimalt style'ad med Materialzedcss som ochså finns som en component (beta)
+till Vue. Detta krävde även jQuery...
+
+Om jag skulle jobba vidare hade det varit kul att implementera grafer för att presentera
+ingridiensfakta!
