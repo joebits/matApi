@@ -32,5 +32,5 @@ Sidan är minimalt style'ad med Materialzedcss som också finns som en component
 till Vue. Detta krävde även jQuery...
 https://github.com/johnleider/vue-materials
 
-Om jag skulle jobba vidare hade det varit kul att implementera grafer för att presentera
-ingrediensfakta!
+Om jag skulle jobba vidare hade det varit kul att få till sorteringen av produkter/ingredienser 
+och senare även implementera grafer för att presentera ingrediensfakta!
