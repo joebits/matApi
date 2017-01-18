@@ -25,8 +25,8 @@ Jag fick snabbt problem med mina anrop till Api:et och fick felet:
 resource. Origin 'blablabla' is therefore not allowed access."
 
 Detta resulterade i att jag istället gjorde anropet via node.Js på serversidan
-och skickade detta vidare till klienten. Eftersom jag är helt grön på både Node och
-Vue var detta lite småkinkigt men jag fick till det tillslut!
+och skickade detta vidare till klienten. Eftersom jag är helt grön på Node 
+var detta lite småkinkigt men jag fick till det tillslut!
 
 Sidan är minimalt style'ad med Materialzedcss som också finns som en component (betaisch)
 till Vue. Detta krävde även jQuery...
